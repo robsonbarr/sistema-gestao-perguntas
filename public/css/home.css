@@ -1,0 +1,118 @@
+.content-full{
+	display: grid;
+	grid-template-columns: 50% 50%;/*separacao das colunas*/
+	/*grid-template-rows: 50.1rem 1fr;/*tamanho e o restante da fracao*/
+	grid-template-areas: 'header header'
+	'left right';
+	
+	height: 100vh;
+
+}
+
+header{
+	grid-area: header;
+	background: teal;
+	height: 130px;
+}
+
+form{
+	/*width: 50%;
+	height: 80%;*/
+	
+	
+	margin-top: 40px;
+	text-align: center;
+}
+form input[type=submit]{
+	margin: 0 auto;
+	width: 70%;
+	height: 66px;
+	background: teal;
+	color: white;
+	font-size: clamp(14px,1.7rem,2vw);/**minimo,padrao,maximum*/
+	padding-left:11px;
+	margin-top: 30px;
+	cursor: pointer;
+	background-image: linear-gradient(90deg, teal, #04fc33);
+	border: 0;
+
+}
+input[type=number]{
+	margin-top: 50px;
+	width: 70%;
+	height: 66px;
+	padding: 10px;
+}
+
+
+#how{
+	max-width: 70%;
+	max-height: 80px;
+	min-height: 67px;
+	min-width: 78px;
+	margin-top: 50px;
+	width: 70%;
+	height: 66px;
+	padding: 10px;
+	resize:none;
+	 
+
+}
+
+
+
+
+#criar{
+	position: absolute;
+	left: 400px;
+	top: 92vh;
+	width: 40%;
+	height: 100px;
+	background: teal;
+	color: white;
+	font-size: clamp(14px,1.7rem,2vw);/**minimo,padrao,maximum*/
+	margin-top: 30px;
+	cursor: pointer;
+	background-image: linear-gradient(80deg, #cfc7c4, #04fc90);
+	border: 1px solid gray;
+	text-align: center;
+	padding: 20px;
+	color: #540e34;
+	text-decoration: none;
+
+}
+#criar:hover{
+	background: teal;
+	color: white;
+}
+
+.lineum{
+	margin-top: 30px;
+	width: 45%;
+	height: 3px;
+	background: gray;
+}
+.linetwo{
+	margin-top: -13px;/*alinhamento entre as linhas ou bordas*/
+	width: 45%;
+	height: 3px;
+	background: gray;
+	float: right;
+}
+.linecenter{
+	margin: 0 auto;
+	margin-top: -10px;
+	text-align: center;
+	height: 20px;
+	width: 9%;
+	color: #34aeeb;
+	font-weight: bold;
+}
+
+
+h2{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+}

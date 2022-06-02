@@ -1,0 +1,19 @@
+{
+  "name": "novov10",
+  "version": "1.0.0",
+  "description": "desenvolvido para gerenciamento de perguntas anonimas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Robson Barros de Matos",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

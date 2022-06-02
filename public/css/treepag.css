@@ -1,0 +1,146 @@
+/*pagina tres */
+
+
+
+form input[type=password]{
+	margin-top: 50px;
+	width: 70%;
+	height: 66px;
+	padding: 10px;
+
+}
+
+
+.content{
+	width: 100%;
+	height: 100vh;
+	
+}
+
+/*ate aqui funciona menos as questoes da div id questions e suas parentes */
+
+
+#section-questao{
+
+	margin: 0 auto;
+	width: 90%;
+	height: 70vh;
+	/*background: red;*/ /*essa sessao nao tem altura definida para mobile*/
+}
+.questions-wrap{
+	width: 100%;
+	height: 100px;
+	background: #d9fff8;
+	color:teal;
+	padding: 20px;
+	font-size: 20px;
+	margin-top: 10px;
+	border-radius: 0 20px 0 20px;
+}
+.actions{
+	width: 30%;
+	float: right;
+	height: 30px;
+	margin-top: 43px;
+
+
+
+}
+
+.actions a{
+	margin-left: 35px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: gray;
+}
+
+.actions a:hover{
+	text-decoration: underline;
+
+}
+
+
+/*modal*/
+.modal_full.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal_full{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background: rgba(104, 163, 159, 0.6);
+	display: flex;
+
+
+	
+
+}
+.modal_m{
+	width: min(50rem,90%);
+	height: 60vh;
+	background: white;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 30px;
+	margin-top: 70px;
+}
+.modal_m p{
+	/*background-image: linear-gradient(80deg, #cfc7c4, #04fc90);*//*/*para botoes*/
+	font-size: 24px;
+	text-align: center;
+	font-family: sans-serif;
+	color: teal;
+}
+#form-treepag{
+	width: 99%;
+	height: 60%;
+	margin-top: -1px;
+
+}
+.buttos{
+	margin: 0 auto;
+	padding: 10px;
+	margin-top: 10px;
+	height: 50px;
+	width: 50%;
+}
+
+.buttos > .button_cancel{
+	width: 100px;
+	padding: 4px;
+	height: 90%;
+	background: #c5d1ce;
+	float: left;
+
+
+
+}
+.buttos > .button_cancel a{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+.buttos button{
+	background-image: linear-gradient(90deg, teal, #04fc33);
+	width: 100px;
+	height: 90%;
+	border: 0;
+	color: white;
+}
+.buttos button:hover{
+	background-image: linear-gradient(90deg,  #04fc33, teal);
+	font-weight: bold;
+	color: black;
+	cursor: pointer;
+
+}
+
+	/*front end completo */
+	
+
+
