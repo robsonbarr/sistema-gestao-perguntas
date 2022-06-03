@@ -1,23 +1,21 @@
 
-document.querySelector('.modal-full').classList.add("active")
-
-//import { Modal } from './modal.js'
+import  Modal  from './modal.js'
 
 
-//const modal = Modal()
+const modal = Modal()
+
+const checkButtons = document.querySelectorAll(".actions a.check")
+
+checkButtons.forEach(button => {
+
+button.addEventListener("click", event => {
+  //button.addEventListener("click",listener[, options]);
+  modal.open()
+})
 
 
+})
 
-//pegar todos os botoes com a classe check
-//
-//checkButtons.forEach(button => {
-//   button.addEventListener("click", event => {
 
-     //  modal.open()
- //   })
-
-//})
-
-//pegar qunado marcar como lido for clicado
 
 
