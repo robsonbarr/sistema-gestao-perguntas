@@ -1,13 +1,18 @@
 
 export default function Modal(){
+
+  const cancelButton = document.querySelector('.button_cancel')
+
+  cancelButton.addEventListener("click", close)
+
     function open(){
         //funcionalidade de atribuir a classe active
         document.querySelector('.modal-full').classList.add("active")
 
     }
-    
-    function Close() {
-        //funcionalidade de remover a classe active da m0dal
+
+    function close() {
+        document.querySelector('.modal-full').classList.remove("active")
  }
         return {
             open,
