@@ -61,12 +61,12 @@ form input[type=password]{
 
 
 /*modal*/
-.modal_full.active{
+.modal-full.active{
 	visibility: visible;
 	opacity: 1;
 }
 
-.modal_full{
+.modal-full{
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -74,6 +74,9 @@ form input[type=password]{
 	top: 0;
 	background: rgba(104, 163, 159, 0.6);
 	display: flex;
+	visibility:hidden;
+	opacity:0;
+	
 
 
 	
