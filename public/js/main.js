@@ -13,36 +13,27 @@ const modalButton = document.querySelector('.modal-full button')
 
 
 
-//para baixo normal
+
 
 
 const checkButtons = document.querySelectorAll(".actions a.check")
 
 checkButtons.forEach(button => {
 
-button.addEventListener("click", event => {
-
-modalTitulo.innerHTML = "marcar como lida"
-  
-  modal.open()
-})
-
-
+button.addEventListener("click", handeleClick)
 })
 
 const delButtons = document.querySelectorAll(".actions a.del")
 
 delButtons.forEach(button => {
+button.addEventListener("click", (event) => handeleClick(event, false))
 
-button.addEventListener("click", event => {
-  modalTitulo.innerHTML = "exluir essa pergunta"
-  //button.addEventListener("click",listener[, options]);
+})
+
+
+function handeleClick(event, check = true) {
+  const text = check ? "Marcar como lida " : "Excluir"
+  modalTitulo.innerHTML= `${text} esta pergunta`
+  modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} essa pergunta?`
   modal.open()
-})
-
-
-})
-
-
-//1:45 tem que copiar as manhas de concatenaçao que há no codigo da jake para uma boa semantica de codigo 
-//pusa para copiar e só entao da continuidade
+}
