@@ -27,13 +27,16 @@ const delButtons = document.querySelectorAll(".actions a.del")
 
 delButtons.forEach(button => {
 button.addEventListener("click", (event) => handeleClick(event, false))
-
 })
 
-
 function handeleClick(event, check = true) {
+  event.preventDefault()
   const text = check ? "Marcar como lida " : "Excluir"
   modalTitulo.innerHTML= `${text} esta pergunta`
   modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} essa pergunta?`
+  modalButton.innerHTML = `Sim,${text.toLowerCase()}`
   modal.open()
 }
+
+
+//paroou em 2:00
