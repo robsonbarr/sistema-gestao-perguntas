@@ -32,6 +32,14 @@ button.addEventListener("click", (event) => handeleClick(event, false))
 function handeleClick(event, check = true) {
   event.preventDefault()
   const text = check ? "Marcar como lida " : "Excluir"
+  const slug = check ? "check" : "del"
+  const treepageId = document.querySelector('#treepage-id').dataset.id 
+  const questionId = event.target.dataset.id
+  const form = document.querySelector(".content form")
+
+form.setAttribute("action",`/treepage/${treepageId}/${questionId}/${slug}`)
+
+
   modalTitulo.innerHTML= `${text} esta pergunta`
   modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} essa pergunta?`
   modalButton.innerHTML = `Sim,${text.toLowerCase()}`
@@ -39,4 +47,4 @@ function handeleClick(event, check = true) {
 }
 
 
-//paroou em 2:00
+//paroou em 2:09:55
